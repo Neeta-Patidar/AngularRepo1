@@ -1,0 +1,16 @@
+
+<div class="table-responsive">
+    <table class="table">
+       <tr *ngFor="let std of stds"> 
+           <td>{{std.no}}</td>
+           <td>{{std.name}}</td>
+           <td>{{std.address}}</td>
+           <td>
+               <a routerLink="/edit/{{std.no}}">Edit</a>
+           </td>
+           <td>
+               <a routerLink="/delete/{{std.no}}">Delete</a>
+           </td>
+        </tr>
+    </table>
+</div>
